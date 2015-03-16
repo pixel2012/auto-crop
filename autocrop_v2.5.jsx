@@ -113,7 +113,7 @@ win.show();
 
 function work(inputPath) {
     var samplesFolder = Folder(inputPath);
-    var fileList = samplesFolder.getFiles();
+    var fileList = samplesFolder.getFiles(/\.(jpg|png|tif|)$/i);
     for (var i = 0; i < fileList.length; i++) {
       if (fileList[i] instanceof File) {
         var imgDoc = open(fileList[i]);
