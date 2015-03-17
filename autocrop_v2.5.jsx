@@ -6,7 +6,6 @@
 /*
 <javascriptresource>
 <name>智能批量裁剪v2.5</name>
-<enableinfo>true</enableinfo>
 </javascriptresource>
 */
 #target photoshop
