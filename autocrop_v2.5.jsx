@@ -81,11 +81,12 @@ win.buttons.okBtn.onClick=function(){
     alert("存储路径不能为空！");
     return;
   };//end if
-  if(Number(win.output.outputG2.et1.text)<=0){
+  reg=/^[1-9][0-9]*$/;//正整数的正则匹配表达式
+  if(Number(win.output.outputG2.et1.text.search(reg)==-1){
     alert("裁剪宽度不合法！");
     return;
   };//end if
-  if(Number(win.output.outputG2.et2.text)<=0){
+  if(Number(win.output.outputG2.et2.text.search(reg)==-1){
     alert("裁剪高度不合法！");
     return;
   };//end if
